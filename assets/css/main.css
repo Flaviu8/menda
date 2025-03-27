@@ -64,13 +64,13 @@ a {
 
 /* Navigation Links */
 .nav-bar {
-    list-style-type: none;
     display: flex;
     gap: 20px;
 }
 
 .nav-bar li {
     margin: 0 15px;
+    list-style-type: none;
 }
 
 .nav-bar li a {
