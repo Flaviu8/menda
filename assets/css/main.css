@@ -41,6 +41,7 @@ a {
 .logo img {
     width: 100px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 /* Hamburger Menu */
@@ -394,10 +395,17 @@ a {
         display: flex;
     }
 
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 96%;
+    }
+
     .nav-bar {
         position: fixed;
         top: 91px;
-        right: -420px; /* Start hidden */
+        right: -800px; /* Start hidden */
         width: 98%;
         height: 60vh;
         background: radial-gradient(circle, #3A5DBA, #284EA2, #182C6E);
