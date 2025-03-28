@@ -19,7 +19,7 @@ a {
 }
 /* General Styles */
 .navbar {
-    background: radial-gradient(circle, #3A5DBA, #284EA2, #182C6E);
+    background: #131921;
     position: sticky;
     top: 0;
     width: 100%;
@@ -34,34 +34,35 @@ a {
     width: 100%;
 }
 
+.nav-box {
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+}
+
 .nav-links {
     display: flex;
+    align-items: center;
 }
 
 .logo img {
     width: 100px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 4px;
+  
+}
+
+#hamburger { 
+    display: none;
 }
 
 /* Hamburger Menu */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
+
+.hamburger img {
+    width: 34px;
+    margin-right: 6px;
 }
 
-.hamburger span {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: white;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
 
 /* Navigation Links */
 .nav-bar {
@@ -80,9 +81,12 @@ a {
     transition: color 0.3s ease;
 }
 
-.nav-bar li a:hover {
+.nav-bar .login  {
     color: #FBB13C;
+    font-weight: 600;
 }
+
+
 
 
 .create-account {
@@ -391,24 +395,31 @@ a {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    .hamburger {
+    #hamburger {
         display: flex;
+        cursor: pointer;
     }
+
+    .logo img {
+        width: 80px;
+      
+    }
+
 
     .nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 96%;
     }
 
     .nav-bar {
         position: fixed;
-        top: 91px;
-        right: -800px; /* Start hidden */
-        width: 98%;
-        height: 60vh;
-        background: radial-gradient(circle, #3A5DBA, #284EA2, #182C6E);
+        top: -1500px;
+        left: 0px; /* Start hidden */
+        width: 100%;
+        height: 40vh;
+        background: #fff;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -419,33 +430,47 @@ a {
 
     .nav-links {
         display: block;
+        margin-left: 14px;
+        line-height: 38px;
+    }
+
+
+    .nav-bar.active {
+        top: 78px;
     }
 
     .nav-bar.active {
-        right: 0;
+        display: block;
+    }
+
+
+    .nav-bar.active ul li a{
+        color: black;
     }
 
     .nav-bar li {
         margin: 20px 0;
     }
 
+    .nav-buttons {
+        display: block;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+   .create-account {
+        width: 160px;
+    }
+
     .nav-buttons a {
-        margin-top: 6px;
+        margin-top: 26px;
         display: block;
         text-align: center;
     }
 
-    /* Hamburger animation */
-    .hamburger.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+    .nav-bar .login {
+        margin-left: 16px;
+        display: flex;
     }
 
     .hero {
@@ -519,7 +544,11 @@ a {
 .features-item {
     width: 80%;
 }
-
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 .why-choose-us h2 {
     font-size: 1.5rem;

@@ -27,7 +27,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     hamburger.addEventListener("click", function() {
         navBar.classList.toggle("active");
+
     });
+});
+
+
+document.getElementById("hamburger").addEventListener("click", function () {
+    let menuIcon = document.getElementById("menu-icon");
+    let isOpen = menuIcon.src.includes("burger-menu.svg");
+
+    menuIcon.src = isOpen 
+        ? "./assets/icons/cross.svg" 
+        : "./assets/icons/burger-menu.svg";
 });
 
 // Function to switch between tabs
