@@ -41,24 +41,6 @@ document.getElementById("hamburger").addEventListener("click", function () {
         : "./assets/icons/burger-menu.svg";
 });
 
-// Function to switch between tabs
-function showTab(tabName) {
-    // Get all tab content elements
-    const allTabs = document.querySelectorAll('.tab-content');
-    // Remove 'active' class from all tabs
-    allTabs.forEach(tab => tab.classList.remove('active'));
-
-    // Hide all tab buttons
-    const allBtns = document.querySelectorAll('.tab-btn');
-    allBtns.forEach(btn => btn.classList.remove('active'));
-
-    // Show selected tab
-    document.getElementById(tabName).classList.add('active');
-
-    // Set the selected tab button as active
-    const selectedBtn = document.querySelector(`.tab-btn[onclick="showTab('${tabName}')"]`);
-    selectedBtn.classList.add('active');
-}
 
 
 
