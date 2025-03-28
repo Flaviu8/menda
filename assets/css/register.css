@@ -1,0 +1,135 @@
+.register {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.registration-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 48%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #FBB13C; /* Accessible contrast color */
+    color: rgb(0, 0, 0);
+}
+
+.tab-btn:hover {
+    background-color: #ddd;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.registration-form input {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.registration-form input:focus {
+    border-color: #FBB13C;
+    outline: none;
+}
+
+.register-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-btn {
+    background-color: #FBB13C; /* Accessible contrast color */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 9px;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 140px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #FFB703;
+}
+
+/* Hide all tabs by default */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+.email input{
+    margin-left: 30px;
+}
+
+.password input{
+    margin-left: 5px;
+}
+
+.company-name input {
+    margin-left: 29px;
+}
+
+.username input {
+    margin-left: 68px;
+}
+
+.email input {
+    margin-left: 96px;
+}
+
+.password input{
+    margin-left: 68px;
+}
+
+.recover {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 14px;
+}
+
+.recover a {
+    color: #969490;
+}
