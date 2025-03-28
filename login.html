@@ -23,8 +23,7 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="pricing.html">Pricing</a>
-                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="nav-buttons">
@@ -36,27 +35,40 @@
     </nav>
     <section class="register">
             <div class="registration-container">
-                <h1>Login</h1>
+                <div class="logo-form">
+                    <img src="./assets/img/menda.png" alt="logo"/>
+                </div>
+                <div class="r-title">
+                    <h2>Sign In</h2>
+                    <p>Login to stay connected.</p>
+                </div>
+        
 
                 <!-- Login Form -->
                 <form action="#" method="POST" class="registration-form">
                         
                         <!-- Email -->
-                        <div class="email">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        </div>
+                        <label>
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <span>Email</span>
+                        </label>
                         <!-- Password -->
-                        <div class="password">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Create a password" required>
+                        <label>
+                            <input type="password" id="password" name="password" placeholder=" " required>
+                            <span>Password</span>
+                          </label>
+                          <div class="remember-box">
+                          <div class="agree">
+                            <input type="checkbox" id="remember"/>
+                            <label for="remember">Remember Me</label>
+                          </div>
+                        <div class="recover"><a href="recover.html">Forgot your password?</a></div>
                         </div>
-                        <div class="recover"><p>Forgot your password? <a href="recover.html">Recover here!<a></p></div>
                         <div class="register-btn">
                             <button type="submit" class="submit-btn">Register</button>
                         </div>
-                   
                 </form>
+                <div class="account-s"><p>You don't have an acccount? <a href="register.html">Create account here.</a></p></div>
             </div>
     </section>
     <div id="footer"></div> <!-- Footer will be inserted here -->

@@ -36,8 +36,13 @@
     </nav>
     <section class="register">
             <div class="registration-container">
-                <h1>Create an Account</h1>
-
+                <div class="logo-form">
+                    <img src="./assets/img/menda.png" alt="logo"/>
+                </div>
+                <div class="r-title">
+                    <h2>Sign Up</h2>
+                    <p>Create your account.</p>
+                </div>
                 <!-- Tab Navigation -->
                 <div class="tabs">
                     <button class="tab-btn active" onclick="showTab('individual')">Individual</button>
@@ -50,60 +55,71 @@
                     <!-- Individual Tab Content -->
                     <div id="individual" class="tab-content active">
                         <!-- Username -->
-                        <div class="username">
-                            <label for="username">Username</label>
-                            <input type="text" id="username" name="username" placeholder="Enter a username" required>
-                        </div>
+                        <label>
+                            <input type="text" id="username" name="username" placeholder=" " required>
+                            <span>Username</span>
+                        </label>
                         
                         <!-- Email -->
-                        <div class="email">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        </div>
+                        <label>
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <span>Email</span>
+                        </label>
                         <!-- Password -->
-                        <div class="password">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Create a password" required>
-                        </div>
+                        <label>
+                            <input type="password" id="password" name="password" placeholder=" " required>
+                            <span>Password</span>
+                          </label>
+                          <div class="agree">
+                            <input type="checkbox" id="agree"/>
+                            <label for="agree">I agree with terms of use</label>
+                          </div>
                         <div class="register-btn">
-                            <button type="submit" class="submit-btn">Register</button>
+                            <button type="submit" class="submit-btn">Create account</button>
                         </div>
                     </div>
 
                     <!-- Company Tab Content -->
                     <div id="company" class="tab-content">
                     <!-- Username -->
-                    <div class="username">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Enter a username" required>
-                    </div>
+                    <label>
+                        <input type="text" id="username" name="username" placeholder=" " required>
+                        <span>Username</span>
+                    </label>
                         <!-- Email -->
-                    <div class="email">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    </div>
+                        <label>
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <span>Email</span>
+                        </label>
                         <!-- Company Name -->
-                    <div class="company-name">
-                        <label for="company-name">Company Name</label>
-                        <input type="text" id="company-name" name="companyName" placeholder="Enter your company name">
-                    </div>
+                    <label>
+                        <input type="text" id="company-name" name="companyName" placeholder=" ">
+                        <span>Company name</span>
+                    </label>
 
                         <!-- Company Registration Number -->
-                    <div class="company-registration-number">
-                        <label for="company-registration-number">
-                            Registration Number</label>
-                        <input type="text" id="company-registration-number" name="companyRegistrationNumber" placeholder="Enter your registration number">
-                    </div>
+                    <label>
+                        <input type="text" id="company-registration-number" name="companyRegistrationNumber" placeholder=" ">
+                        <span>Company registration number</span>
+                    </label>
 
                         <!-- Password -->
-                    <div class="password">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Create a password" required>
+                        <label>
+                            <input type="password" id="password" name="password" placeholder=" " required>
+                            <span>Password</span>
+                          </label>
+                          <div class="agree">
+                            <input type="checkbox" id="agree"/>
+                            <label for="agree">I agree with terms of use</label>
+                          </div>
+                
+                    <div class="register-btn">
+                        <button type="submit" class="submit-btn">Create account</button>
                     </div>
-                <div class="register-btn">
-                    <button type="submit" class="submit-btn">Register</button>
-                </div>
-                </form>
+                    </form>
+            </div>
+            <div class="account-s">
+                <p>Already have an account? <a href="login.html">Sign in.</a> </p>
             </div>
     </section>
     <div id="footer"></div> <!-- Footer will be inserted here -->

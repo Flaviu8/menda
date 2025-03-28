@@ -11,11 +11,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
+    text-align: center;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+.r-title h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.r-title {
+    margin-bottom: 24px;
+    font-size: 18px;
 }
 
 .tabs {
@@ -34,6 +41,7 @@ h1 {
     font-weight: bold;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    margin-bottom: 24px;
 }
 
 .tab-btn.active {
@@ -45,30 +53,89 @@ h1 {
     background-color: #ddd;
 }
 
-.registration-form {
-    display: flex;
-    flex-direction: column;
-}
 
-.registration-form label {
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.registration-form input {
+.registration-form input[type="text"] {
     padding: 10px;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    width: 100%;
+    border-color: #e6e0e0;
+}
+
+.registration-form input[type="password"] {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    border-color: #e6e0e0;
+}
+
+.registration-form input[type="email"] {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    border-color: #e6e0e0;
+}
+
+.registration-form input[type="checkbox"] {
+    border-radius: 100%;
+    border-color: #e6e0e0;
+    margin-right: 4px;
+    width: 25px;
 }
 
 .registration-form input:focus {
     border-color: #FBB13C;
-    outline: none;
+    border-width: 0.3cap;
 }
+label {
+    position: relative;
+    display: flex;
+  }
+    
+  span {
+    padding: 10px;
+    pointer-events: none;
+    position: absolute;
+    left: 6px;
+    top: 0;
+    transition: 0.4s;
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
 
+  
+  /* When input is focused, or the placeholder is not being displayed, change the border to blue */
+  input:focus, input:not(:placeholder-shown) {
+    outline: none;
+    border-color: #3458B3; 
+  }
+  
+  /* When input is focused, or the placeholder is not being displayed, change the placeholder size, position and color */
+  input:focus + span, input:not(:placeholder-shown) + span {
+    opacity: 1;
+    background-color: white;
+    color: #3458B3;
+    transform: scale(0.75) translateY(-65%) translateX(-20px);
+  }
+
+  .agree {
+    display: flex;
+    margin-bottom: 24px;    
+  }
+  
 .register-btn {
     display: flex;
     justify-content: flex-end;
@@ -99,37 +166,39 @@ h1 {
     display: block;
 }
 
-
-.email input{
-    margin-left: 30px;
+.logo-form img{
+    width: 220px;
 }
 
-.password input{
-    margin-left: 5px;
-}
-
-.company-name input {
-    margin-left: 29px;
-}
-
-.username input {
-    margin-left: 68px;
-}
-
-.email input {
-    margin-left: 96px;
-}
-
-.password input{
-    margin-left: 68px;
+.remember-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
 }
 
 .recover {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-bottom: 14px;
+    margin-top: 12px;
 }
 
 .recover a {
-    color: #969490;
+    color: #df7700;
 }
+
+.account-s p{
+    margin-bottom: 14px;
+    margin-top: 12px;
+    color: #000000;
+    font-size: 18px;
+    margin-top: 64px;
+}
+
+.account-s a {
+    color: #df7700;
+}
+
+
+
