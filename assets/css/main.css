@@ -418,7 +418,7 @@ a {
         top: -1500px;
         left: 0px; /* Start hidden */
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         background: #fff;
         flex-direction: column;
         align-items: center;
@@ -459,7 +459,8 @@ a {
     }
     
    .create-account {
-        width: 160px;
+        width: 150px;
+        font-size: 16px;
     }
 
     .nav-buttons a {
