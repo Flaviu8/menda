@@ -200,5 +200,9 @@ label {
     color: #df7700;
 }
 
+@media screen and (max-width: 768px) {
+ .registration-container {
+    width: 90%;
+ }
 
-
+}
