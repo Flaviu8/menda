@@ -396,9 +396,9 @@ a {
 
     .nav-bar {
         position: fixed;
-        top: 90px;
-        right: -250px; /* Start hidden */
-        width: 220px;
+        top: 91px;
+        right: -420px; /* Start hidden */
+        width: 98%;
         height: 60vh;
         background: radial-gradient(circle, #3A5DBA, #284EA2, #182C6E);
         flex-direction: column;
