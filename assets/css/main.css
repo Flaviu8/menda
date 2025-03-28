@@ -399,7 +399,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 96%;
+        width: 100%;
     }
 
     .nav-bar {
