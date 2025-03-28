@@ -133,7 +133,7 @@ label {
 
   .agree {
     display: flex;
-    margin-bottom: 24px;    
+    
   }
   
 .register-btn {
@@ -175,13 +175,13 @@ label {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .recover {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 14px;
-    margin-top: 12px;
 }
 
 .recover a {
