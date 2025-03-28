@@ -1,12 +1,14 @@
 /* Footer */
 footer {
     padding: 30px;
+    width: 90%;
 }
 
 .footer-content {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
 }
 
 .footer-content ul {
